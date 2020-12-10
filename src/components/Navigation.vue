@@ -13,6 +13,3 @@ name: "Navigation"
 }
 </script>
 
-<style scoped>
-
-</style>

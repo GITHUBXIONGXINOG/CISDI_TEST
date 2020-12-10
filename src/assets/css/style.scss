@@ -6,9 +6,11 @@
   bottom: 0;
   margin: auto;
 }
+body{
+  font-size: 16px;
+}
 
 .main{
-  font-size: 16px;
   width: 90rem;
   @extend .margin-center;
   //导航栏

@@ -31,6 +31,13 @@ import {mapGetters, mapMutations} from "vuex";
 
 export default {
     name: "list",
+    metaInfo:{
+      title:'list',
+      meta:[
+          { charset: 'utf-8' },
+          { name: 'viewport', content: 'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2,user-scalable=yes' }
+      ]
+    },
     created() {
         this.initList()
     },
@@ -40,12 +47,12 @@ export default {
             this.$store.dispatch('setList')
         },
         ...mapMutations([
-          'queryData',//设置存储本地json
-          'insertNewData',//添加数据
-          'deleteDataLine',//删除数据
-          'addNewData',//新增数据
-          'randomData',//随机顺序
-          'changeHiddenState',//改变当前状态
+            'changeHiddenState',//改变当前状态
+            'queryData',//设置存储本地json
+            'insertNewData',//添加数据
+            'deleteDataLine',//删除数据
+            'addNewData',//新增数据
+            'randomData',//随机顺序
         ])
 
     },

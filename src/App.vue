@@ -3,12 +3,12 @@
         <div class="main">
             <!-- 头部导航 -->
             <navigation />
+            <!-- 路由动画 -->
             <transition :name="transitionName">
                 <keep-alive>
                     <router-view/>
                 </keep-alive>
             </transition>
-
         </div>
     </div>
 </template>
@@ -25,7 +25,6 @@ export default {
     },
     watch:{
         $route(to,from){
-            // debugger
             if (to.fullPath=='/list'){
                 this.transitionName = 'fade-slide-left'
             }else {

@@ -6,6 +6,8 @@ import '@/assets/css/style.scss'
 Vue.config.productionTip = false
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
+import Meta from 'vue-meta'
+Vue.use(Meta)
 new Vue({
   router,
   store,
