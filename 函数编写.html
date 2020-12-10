@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数编写</title>
+</head>
+<body>
+    <script>
+    function CISDI_JS(num) {
+        CISDI_JS.toString=function () {
+            console.log( CISDI_JS.prototype.data)
+            CISDI_JS.prototype.data=0
+        }
+        CISDI_JS.prototype.data+=num
+        return CISDI_JS
+    }
+    CISDI_JS.prototype.data=0
+
+
+    CISDI_JS (0).toString()
+    CISDI_JS (0)(1).toString()
+    CISDI_JS(0)(1)(2).toString()
+    let v = CISDI_JS(0)(1)
+    v(2).toString()
+    </script>
+</body>
+</html>
